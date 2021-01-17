@@ -17,9 +17,9 @@ We were initially planning to have a page on our website which would display the
 Having finished a fully functioning project which can be used. It wasn't our initial idea but we did switch ideas in the middle of the hack so finishing was a big accomplishment for us.
 
 ## What we learned
-   **-**  Time management is key, never leave things to the last minute.
-   **-**  We learned how to web scrape. None of us had a lot of experience with it.
+- Time management is key, never leave things to the last minute.
+- We learned how to web scrape. None of us had a lot of experience with it.
 
 ## What's next for Movie Night Dilemma
-   **-**  We can have a sorting category on our website so that the user can decide genre, release date, age ratings, etc.
-   **-**  We can also display the table on the website itself, 50 rows at a time.
+- We can have a sorting category on our website so that the user can decide genre, release date, age ratings, etc.
+- We can also display the table on the website itself, 50 rows at a time.
