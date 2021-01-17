@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+* { /* Affects all elements */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------- Overall ----------------------- */
+:root { /* Global Variables */
+    --headingFont: "Raleway";
+    --bodyFont: "Lato";
+    --background1: #4C4F55;
+    --background2: #2F3137;
+    --text1: white;
+}
+
+body { /* Basically everything */
+    background-color: var(--background1);
+}
+
+h1, h2, h3, h4 { /* All headings */
+    font-family: var(--headingFont), sans-serif;
+    font-weight: bold;
+    color: var(--text1);
+}
+
+p, th, ul, li, a { /* All body text */
+    font-family: var(--bodyFont), sans-serif;
+    font-weight: 300; /* Light weight */
+    color: var(--text1);
+    text-decoration: none; /* There is no underline on the links */
+    list-style-type: none; /* There aren't any dot-points */
+    vertical-align: top;
+}
+
+/* ----------------------- Header ----------------------- */
+h1 { /* "Car Deals" text */
+    font-size: 80px;
+    position: absolute;
+    top: 27.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Header.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* ----------------------- Navigation Bar ----------------------- */
+nav { /* The navigation bar */
+    height: 0;
+    width: 100%;
+    text-align: center;
+    /* The rest of the code ensures that the nav bar is in the middle of the page */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav > ul > li { /* List items in the Nav bar */
+    display: inline-block; /* All of the items in the nav bar are in a line */
+}
+
+nav > ul > li { /* List items in the Nav bar */
+    min-width: 120px;
+    line-height: 50px;
+}
+
+li > ul { /* Any list inside a list item */
+    display: none; /* Not shown unless hovered over */
+    background-color: var(--background1);
+}
+
+nav > ul > li > a { /* Links */
+    font-size: 35px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+li > ul > li { /* Sublinks */
+    font-size: 25px;
+    line-height: 40px;
+}
+
+nav > ul > li:hover { /* When the list items are hovered over */
+    background-color: var(--background1); /* Background colour changes */
+}
+
+nav > ul > li:hover > ul { /* The list inside the list is shown when hovered over */
+    display: block;
+}
+
+li > ul > li:hover {
+    background: var(--background2);
+}
+
+.no-display {
+    display: none;
+}
+
+#loading {
+    padding: 40px;
+    font-size: 35px;
+}
+
+/* ----------------------- Main ----------------------- */
+.main {
+    padding: 25px 10%;
+    text-align: center;
+}
+
+.main > h2 {
+    font-size: 35px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+th {
+    padding: 10px 0;
+    border: 5px solid black;
+}
+
+/* ----------------------- Footer ----------------------- */
+footer {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url("Footer.png");
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+}
+
+.people {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 15%;
+    margin: 20% 4% 0 4%;
+}
+
+.people > p {
+    padding: 15px 0;
+    font-size: 22px;
+}
